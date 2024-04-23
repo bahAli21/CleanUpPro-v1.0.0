@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="data\ico-list.png" />
+    <None Remove="data\ico.ico" />
+    <None Remove="data\icons8-balayer-100.png" />
+    <None Remove="data\icons8-domaine-64.png" />
+    <None Remove="data\icons8-mettre-à-jour-la-rotation-à-gauche-100.png" />
     <None Remove="ico-list.png" />
     <None Remove="ico.ico" />
     <None Remove="icons8-balayer-100.png" />
@@ -17,19 +22,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ico-list.png">
+    <Resource Include="data\ico-list.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="ico.ico">
+    <Resource Include="data\ico.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="icons8-balayer-100.png">
+    <Resource Include="data\icons8-balayer-100.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="icons8-domaine-64.png">
+    <Resource Include="data\icons8-domaine-64.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="icons8-mettre-à-jour-la-rotation-à-gauche-100.png">
+    <Resource Include="data\icons8-mettre-à-jour-la-rotation-à-gauche-100.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

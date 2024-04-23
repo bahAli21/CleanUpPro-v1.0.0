@@ -27,7 +27,7 @@ namespace LogicielNettoyage
         string version = "1.0.0"; //La premiere version du logiciel
         public DirectoryInfo winTemp; //Le dossier temp de Windows
         public DirectoryInfo appTemp; //Le dossier temp des application
-
+        int nbFileDeletes = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -99,6 +99,7 @@ namespace LogicielNettoyage
                 {
                     file.Delete();
                     Console.WriteLine(file.FullName);
+                    nbFileDeletes++;
                 }
                 catch (Exception ex)
                 {
@@ -120,10 +121,7 @@ namespace LogicielNettoyage
             }
         }
 
-        private void Button_Histo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("TODO: Créer page historique", "Historique", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
+        
 
         private void Button_MAJ_Click(object sender, RoutedEventArgs e)
         {
@@ -174,10 +172,16 @@ namespace LogicielNettoyage
             {
                 Console.WriteLine("Impossible d'analyser les dossiers : " + ex.Message);
             }
+            string d = DateTime.Today.ToString();
+            SaveSomething(d,"date.txt");
 
             espace.Content = totalSize + " Mb";
             titre.Content = "Analyse effectuée !";
-            date.Content = DateTime.Today;
+            string dateFromFile = GetSomethingFromFile("date.txt");
+            if (dateFromFile != string.Empty)
+                date.Content = dateFromFile;
+            else
+                date.Content = "Jamais";
         }
 
         /// <summary>
@@ -209,10 +213,45 @@ namespace LogicielNettoyage
                 Console.WriteLine("Erreur : " + ex.Message);
             }
 
+            string nb = nbFileDeletes.ToString();
+            SaveSomething(nb, "historique.txt");
             btnClean.Content = "NETTOYAGE TERMINÉ";
             titre.Content = "Nettoyage effectué !";
             espace.Content = "0 Mb";
         }
 
+        /// <summary>
+        /// Sauvegarde dans un fichier
+        /// </summary>
+        /// <param name="text">Le text a ecrire</param>
+        /// <param name="filepath">Le fichier dans lequel on ecrit</param>
+        public void SaveSomething(string text, string filepath)
+        {
+            
+            File.WriteAllText("/Visual-Studio-Project/Logiciel-de-Nettoyage-PC/LogicielNettoyage/data/"+filepath, text);
+        }
+
+        /// <summary>
+        /// Obtenir du text depuis un fichier
+        /// </summary>
+        /// <param name="filepath">Le fichier a lire</param>
+        /// <returns>return le text ecrit dans le fichier</returns>
+        public string GetSomethingFromFile(string filepath)
+        {
+            string text = File.ReadAllText("/Visual-Studio-Project/Logiciel-de-Nettoyage-PC/LogicielNettoyage/data/" +filepath);
+            return text;
+        }
+
+        
+        /// <summary>
+        /// Affichage de l'historique de nottoyage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHistorique_Click(object sender, RoutedEventArgs e)
+        {
+            string nbFileDeleted = GetSomethingFromFile("historique.txt");
+            MessageBox.Show(nbFileDeleted + " FICHIERS ont été nettoyer sur votre machine", "HISTORIQUE", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

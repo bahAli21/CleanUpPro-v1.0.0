@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LogicielNettoyage"
         mc:Ignorable="d"
         x:Name="fenetre"
-        Title="Logiciel nettoyage" Height="650" Width="1000" ResizeMode="NoResize" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" WindowStartupLocation="CenterScreen" Icon="/ico.ico">
+        Title="Logiciel nettoyage" Height="650" Width="1000" ResizeMode="NoResize" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" WindowStartupLocation="CenterScreen" Icon="data/ico.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="395*"/>
@@ -31,12 +31,12 @@
         <!-- Content -->
         <Button x:Name="btnClean" Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="65,199,0,0" VerticalAlignment="Top" Height="180" Width="400" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="White" FontWeight="Bold" FontFamily="Arial Nova" FontSize="26" Click="Button_Nettoyer_Click"/>
         <Button Content="&#xD;&#xA;MISE À JOUR" HorizontalAlignment="Left" Margin="65,4,0,0" VerticalAlignment="Top" Height="180" Width="400" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="White" FontWeight="Bold" FontFamily="Arial Nova" FontSize="26" Click="Button_MAJ_Click" Grid.Row="1"/>
-        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Height="180" Width="400" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="White" FontWeight="Bold" FontFamily="Arial Nova" FontSize="26" Grid.ColumnSpan="2" Click="Button_Histo_Click"/>
+        <Button x:Name="btnHistorique" Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Height="180" Width="400" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="White" FontWeight="Bold" FontFamily="Arial Nova" FontSize="26" Grid.ColumnSpan="2" Click="btnHistorique_Click"/>
         <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="528,4,0,0" VerticalAlignment="Top" Height="180" Width="400" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="White" FontWeight="Bold" FontFamily="Arial Nova" FontSize="26" Grid.ColumnSpan="2" Click="Button_Web_Click" Grid.Row="1"/>
-        <Image Margin="226,222,325,103" Source="/icons8-balayer-100.png" IsHitTestVisible="False"/>
-        <Image Margin="81,221,224,104" Source="/ico-list.png" IsHitTestVisible="False" Grid.Column="1"/>
-        <Image Margin="226,31,325,188" Source="/icons8-mettre-à-jour-la-rotation-à-gauche-100.png" IsHitTestVisible="False" Grid.Row="1"/>
-        <Image Margin="81,30,224,189" Source="/icons8-domaine-64.png" IsHitTestVisible="False" Grid.Column="1" Grid.Row="1"/>
+        <Image Margin="226,222,325,103" Source="data/icons8-balayer-100.png" IsHitTestVisible="False"/>
+        <Image Margin="81,221,224,104" Source="data/ico-list.png" IsHitTestVisible="False" Grid.Column="1"/>
+        <Image Margin="226,31,325,188" Source="data/icons8-mettre-à-jour-la-rotation-à-gauche-100.png" IsHitTestVisible="False" Grid.Row="1"/>
+        <Image Margin="81,30,224,189" Source="data/icons8-domaine-64.png" IsHitTestVisible="False" Grid.Column="1" Grid.Row="1"/>
 
 
         <!-- Footer -->

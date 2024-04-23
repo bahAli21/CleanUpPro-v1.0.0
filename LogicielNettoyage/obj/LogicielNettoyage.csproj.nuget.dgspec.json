@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual-Studio-Project\\LogicielNettoyage\\LogicielNettoyage\\LogicielNettoyage.csproj": {}
+    "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj": {}
   },
   "projects": {
-    "D:\\Visual-Studio-Project\\LogicielNettoyage\\LogicielNettoyage\\LogicielNettoyage.csproj": {
+    "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual-Studio-Project\\LogicielNettoyage\\LogicielNettoyage\\LogicielNettoyage.csproj",
+        "projectUniqueName": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj",
         "projectName": "LogicielNettoyage",
-        "projectPath": "D:\\Visual-Studio-Project\\LogicielNettoyage\\LogicielNettoyage\\LogicielNettoyage.csproj",
+        "projectPath": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj",
         "packagesPath": "C:\\Users\\mamad\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual-Studio-Project\\LogicielNettoyage\\LogicielNettoyage\\obj\\",
+        "outputPath": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

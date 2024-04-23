@@ -24,42 +24,48 @@ namespace LogicielNettoyage
     /// </summary>
     public partial class MainWindow : Window
     {
-        string version = "1.0.0";
-        public DirectoryInfo winTemp;
-        public DirectoryInfo appTemp;
+        string version = "1.0.0"; //La premiere version du logiciel
+        public DirectoryInfo winTemp; //Le dossier temp de Windows
+        public DirectoryInfo appTemp; //Le dossier temp des application
 
         public MainWindow()
         {
             InitializeComponent();
-            winTemp = new DirectoryInfo(@"C:\Windows\Temp");
-            appTemp = new DirectoryInfo(System.IO.Path.GetTempPath());
-            //CheckActu();
+            winTemp = new DirectoryInfo(@"C:\Windows\Temp"); //Le chemin du dossier temp
+            appTemp = new DirectoryInfo(System.IO.Path.GetTempPath()); //Le chemin du temp des Apps en fonction de l'utilisateur 
+            CheckActu(); 
         }
 
         /// <summary>
-        /// Vérifier les actus
+        /// cette methode Vérifie les actus depuis notre serveur web WampServer
         /// </summary>
-        /*public void CheckActu()
+        public void CheckActu()
         {
-            string url = "http://localhost/siteweb/actu.txt";
+            string url = "http://localhost/LogicielNettoyage/actu.txt";
             using (WebClient client = new WebClient())
             {
                 string actu = client.DownloadString(url);
-                if (actu != String.Empty)
+                if (actu != string.Empty)
                 {
                     actuTxt.Content = actu;
                     actuTxt.Visibility = Visibility.Visible;
                     bandeau.Visibility = Visibility.Visible;
                 }
+                else
+                {
+                    actuTxt.Visibility = Visibility.Hidden;
+                    bandeau.Visibility = Visibility.Hidden;
+                }
+
             }
-        }*/
+        }
 
         /// <summary>
-        /// Vérifier si MAJ
+        /// cette methode Vérifie si une MAJ est dispo
         /// </summary>
-        /*public void CheckVersion()
+        public void CheckVersion()
         {
-            string url = "http://localhost/siteweb/version.txt";
+            string url = "http://localhost/LogicielNettoyage/version.txt";
             using (WebClient client = new WebClient())
             {
                 string v = client.DownloadString(url);
@@ -72,7 +78,7 @@ namespace LogicielNettoyage
                     MessageBox.Show("Votre logiciel est à jour !", "Mise à jour", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
-        }*/
+        }
 
         /// <summary>
         /// Calcul de la taille d'un dossier
@@ -84,7 +90,7 @@ namespace LogicielNettoyage
             return dir.GetFiles().Sum(fi => fi.Length) + dir.GetDirectories().Sum(di => DirSize(di));
         }
 
-        // Vider un dossier
+        // Cette procedure prend un dossier et se charge de le vider
         public void ClearTempData(DirectoryInfo di)
         {
             foreach (FileInfo file in di.GetFiles())
@@ -121,12 +127,12 @@ namespace LogicielNettoyage
 
         private void Button_MAJ_Click(object sender, RoutedEventArgs e)
         {
-            //CheckVersion();
-            MessageBox.Show("Votre logiciel est a jour v3.0.8", "Mise à jour", MessageBoxButton.OK, MessageBoxImage.Information);
+            CheckVersion();
+            //MessageBox.Show("Votre logiciel est a jour v3.0.8", "Mise à jour", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         /// <summary>
-        /// Ouverture site web
+        /// Ouverture d'un site web
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -134,7 +140,7 @@ namespace LogicielNettoyage
         {
             try
             {
-                Process.Start(new ProcessStartInfo("http://anthony-cardinale.fr/pc-cleaner")
+                Process.Start(new ProcessStartInfo("http://bahali21.github.io/AzerType-Project-JS")
                 {
                     UseShellExecute = true
                 });
@@ -152,7 +158,7 @@ namespace LogicielNettoyage
         }
 
         /// <summary>
-        /// Analyser les dossiers
+        /// Analyse des dossiers a traiter
         /// </summary>
         public void AnalyseFolders()
         {
@@ -182,7 +188,6 @@ namespace LogicielNettoyage
         private void Button_Nettoyer_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Nettoyage en cours...");
-            btnClean.Content = "NETTOYAGE EN COURS";
 
             Clipboard.Clear();
 

@@ -41,10 +41,10 @@
 
         <!-- Footer -->
         <Rectangle HorizontalAlignment="Left" Height="90" Stroke="Black" VerticalAlignment="Top" Width="1000" Grid.ColumnSpan="2" Fill="#FFE4E4E4" Margin="0,199,0,0" StrokeThickness="0" Grid.Row="1"/>
-        <Label Content="Copyright 2024 - BAH Mamadou" HorizontalAlignment="Left" Margin="32,205,0,0" VerticalAlignment="Top" Height="38" Width="928" Foreground="Black" FontFamily="Arial Nova" FontSize="20" FontWeight="Normal" Grid.ColumnSpan="2" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Content="Copyright 2024 - BAH Mamadou" HorizontalAlignment="Left" Margin="36,199,0,0" VerticalAlignment="Top" Height="38" Width="928" Foreground="Black" FontFamily="Arial Nova" FontSize="14" FontWeight="Normal" Grid.ColumnSpan="2" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Grid.Row="1"/>
 
-        <Rectangle x:Name="bandeau" HorizontalAlignment="Left" Height="40" Stroke="Black" VerticalAlignment="Top" Width="1000" Grid.ColumnSpan="2" Fill="#FFE09797" Margin="0,249,0,0" StrokeThickness="0" Visibility="Hidden" Grid.Row="1"/>
-        <Label x:Name="actuTxt" Content="Copyright 2020 - Anthony" HorizontalAlignment="Left" Margin="32,250,0,0" VerticalAlignment="Top" Height="38" Width="928" Foreground="Black" FontFamily="Arial Nova" FontSize="20" FontWeight="Normal" Grid.ColumnSpan="2" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Visibility="Hidden" Grid.Row="1"/>
+        <Rectangle x:Name="bandeau" HorizontalAlignment="Left" Height="40" Stroke="Black" VerticalAlignment="Top" Width="1010" Grid.ColumnSpan="2" Fill="#FFE09797" Margin="0,228,0,0" StrokeThickness="0" Visibility="Hidden" Grid.Row="1"/>
+        <Label x:Name="actuTxt" Content="Actue important !" Margin="55,230,17,0" VerticalAlignment="Top" Height="38" Foreground="Black" FontFamily="Arial Nova" FontSize="20" FontWeight="Normal" Grid.ColumnSpan="2" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Visibility="Hidden" Grid.Row="1"/>
 
 
 

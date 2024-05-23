@@ -4,6 +4,13 @@
 
 CleanUpPro est un logiciel complet de nettoyage d'ordinateur conçu pour optimiser les performances et libérer de l'espace disque. Construit avec WPF et .NET Core en utilisant C#, CleanUpPro offre une interface moderne et conviviale. Il propose une gamme de fonctionnalités de nettoyage, telles que la suppression des fichiers temporaires, le nettoyage du registre, la désinstallation des programmes indésirables, la gestion des extensions de navigateur, et bien plus encore. Avec CleanUpPro, maintenez votre ordinateur en bon état de fonctionnement, libérez de l'espace précieux et profitez d'une expérience informatique fluide.
 
+
+J'ai développé ce logiciel en deux versions distinctes :
+
+Version .NET Core WPF : Cette version, dont l'exécutable est disponible plus bas dans le README, offre une interface utilisateur élégante et des fonctionnalités essentielles pour le nettoyage de votre ordinateur.
+
+Version .NET MAUI : Cette version plus complète offre des fonctionnalités supplémentaires telles que le vidage de la corbeille et le nettoyage des fichiers log Windows selon les préférences de l'utilisateur. De plus, un rapport de nettoyage est généré à la fin du processus, fournissant un aperçu détaillé des actions effectuées. Le code source de cette version se trouve dans le dossier .NET MAUI.
+
 ## Fonctionnalités 🛠️
 
 - **Interface Conviviale :** Interface moderne et intuitive pour une navigation facile.

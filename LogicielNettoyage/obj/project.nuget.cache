@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OHuArNKz7rUSU1uOsr22TSAm16jDglafBFiWoqir122xluhZuRRCo9YXI1MFxjN/C4IuSR+1mmX6jDWJcENEhA==",
+  "dgSpecHash": "f0pN5KY1bef6LEctBJtMdCE5SpQ7DzoAVr2pN6/HZHqq8DPhi0EZAJCove/y3I5V85AHp0Tg7vDVBy2YUOvz5A==",
   "success": true,
-  "projectFilePath": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj",
+  "projectFilePath": "D:\\CleanUpPro-v1.0.0\\LogicielNettoyage\\LogicielNettoyage.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

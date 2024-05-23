@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj",
-      "projectName": "LogicielNettoyage",
-      "projectPath": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\LogicielNettoyage.csproj",
+      "projectUniqueName": "D:\\CleanUpPro-v1.0.0\\LogicielNettoyage\\LogicielNettoyage.csproj",
+      "projectName": "CleanUpPro",
+      "projectPath": "D:\\CleanUpPro-v1.0.0\\LogicielNettoyage\\LogicielNettoyage.csproj",
       "packagesPath": "C:\\Users\\mamad\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual-Studio-Project\\Logiciel-de-Nettoyage-PC\\LogicielNettoyage\\obj\\",
+      "outputPath": "D:\\CleanUpPro-v1.0.0\\LogicielNettoyage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

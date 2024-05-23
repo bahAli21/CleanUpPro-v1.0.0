@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pr="clr-namespace:MPowerKit.ProgressRing;assembly=MPowerKit.ProgressRing"
+             x:Class="TutoPcCleaner.RamPage"
+                      Title=""
+         BackgroundColor="white">
+    <VerticalStackLayout Padding="0" VerticalOptions="FillAndExpand">
+        <!-- Menu du haut avec specs PC -->
+        <Frame BackgroundColor="#444" HeightRequest="100" BorderColor="#444" CornerRadius="0">
+            <FlexLayout Direction="Row" Padding="0">
+                <!-- logo -->
+                <Image Source="pcclogo.png" WidthRequest="60" Margin="0,0,5,0"/>
+                <!-- Nom + version -->
+                <VerticalStackLayout Margin="0">
+                    <Label Text="PC Cleaner" FontAttributes="Bold" FontSize="Title"/>
+                    <Label Text="v1.4.0"/>
+                </VerticalStackLayout>
+                <Label Text="" WidthRequest="80" />
+                <!-- Specs -->
+                <VerticalStackLayout FlexLayout.Grow="1">
+                    <Label Text="Microsoft Windows X" x:Name="osVersion"/>
+                    <Label Text="xxxxxx" x:Name="hardware"/>
+                </VerticalStackLayout>
+                <!-- Info -->
+                <ImageButton Source="info.png" WidthRequest="50" BackgroundColor="#444"/>
+            </FlexLayout>
+        </Frame>
+
+        <AbsoluteLayout>
+            <!-- Side menu de gauche -->
+            <Frame AbsoluteLayout.LayoutBounds="0,0,0.075,1" AbsoluteLayout.LayoutFlags="All"
+BackgroundColor="#666" MinimumWidthRequest="80" Padding="0" BorderColor="#666" CornerRadius="0">
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <BoxView HeightRequest="1" BackgroundColor="Transparent"/>
+                    <!-- Page nettoyage -->
+                    <ImageButton Source="clean.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_clean_Clicked">
+                    </ImageButton>
+                    <Label Text="Nettoyage" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center" />
+                    <!-- Page RAM -->
+                    <ImageButton Source="ram.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_ram_Clicked" />
+                    <Label Text="RAM" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center" FontAttributes="Bold" TextDecorations="Underline"/>
+                    <!-- Page Outils -->
+                    <ImageButton Source="tools.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_tools_Clicked" />
+                    <Label Text="Outils" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                    <!-- Page Options -->
+                    <ImageButton Source="options.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_Options_Clicked" />
+                    <Label Text="Options" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                    <!-- Page MAJ -->
+                    <ImageButton Source="update.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_maj_Clicked" />
+                    <Label Text="MAJ" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Partie centrale principale -->
+            <VerticalStackLayout AbsoluteLayout.LayoutBounds="1,0,0.925,1" AbsoluteLayout.LayoutFlags="All">
+                <Frame BackgroundColor="White" BorderColor="#fff" CornerRadius="0" Padding="0" Margin="0" MinimumHeightRequest="585">
+                    <!-- Grille -->
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Contenu de la page -->
+                        <Frame MinimumWidthRequest="600" CornerRadius="0" BorderColor="White" HeightRequest="580" BackgroundColor="White">
+                            <ScrollView>
+                                <StackLayout>
+                                    <Label Text="Optimiser la RAM" FontSize="Large" FontAttributes="Bold" x:Name="mainTitle" TextColor="Black" Margin="0,0,0,10"/>
+                                    <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0, 20, 0, 20"/>
+
+                                    <Label Text="Utilisation de la RAM" FontSize="Medium" FontAttributes="Bold" x:Name="useTxt" TextColor="Black" Margin="0,5,0,10" HorizontalTextAlignment="Center"/>
+
+                                    <Grid HorizontalOptions="FillAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <pr:ProgressRing 
+                                         x:Name="graph"
+                                         HeightRequest="200"
+                                         Progress="0"
+                                         IsIndeterminate="False"
+                                         Smooth="True"
+                                         WidthRequest="200"
+                                         StrokeLineCap="Square"
+                                         Color="DodgerBlue" 
+                                         Thickness="20" />
+
+                                        <Label x:Name="ramUsageTxt" Text="%" Margin="0,80,0,0" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center"/>
+
+                                        <TableView Intent="Menu" RowHeight="44" Grid.Column="1" Margin="0,-10,0,0">
+                                            <TableRoot>
+                                                <TableSection>
+                                                    <TextCell Text="Capacité totale :" Detail="x Mb" x:Name="cellTotal" DetailColor="Black" TextColor="Black"/>
+                                                    <TextCell Text="RAM utilisée :" Detail="x Mb" x:Name="cellUsed" DetailColor="Black" TextColor="Black"/>
+                                                    <TextCell Text="RAM libre :" Detail="x Mb" x:Name="cellFree" DetailColor="Black" TextColor="Black"/>
+                                                </TableSection>
+                                            </TableRoot>
+                                        </TableView>
+
+                                    </Grid>
+
+                                    <Button Text="Optimiser la RAM" Background="DodgerBlue" TextColor="White" Margin="0,100,0,0" Clicked="ButtonCleanRAM_Clicked"/>
+
+                                    <Label Margin="0,10,0,0" Text="RAM optimisée !" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="ramCleaned" IsVisible="False" />
+
+                                </StackLayout>
+                            </ScrollView>
+                        </Frame>
+
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+
+            <!-- Footer -->
+            <Frame  AbsoluteLayout.LayoutBounds="0,585,1,AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional"
+BackgroundColor="#333" HeightRequest="60" BorderColor="#333" CornerRadius="0">
+                <Label Text="PC Cleaner" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextDecorations="Underline"/>
+            </Frame>
+
+        </AbsoluteLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

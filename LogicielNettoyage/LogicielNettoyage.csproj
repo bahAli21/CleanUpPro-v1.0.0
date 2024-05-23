@@ -6,6 +6,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>CleanUpPro</AssemblyName>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +22,10 @@
     <None Remove="icons8-balayer-100.png" />
     <None Remove="icons8-domaine-64.png" />
     <None Remove="icons8-mettre-à-jour-la-rotation-à-gauche-100.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ico.ico" />
   </ItemGroup>
 
   <ItemGroup>

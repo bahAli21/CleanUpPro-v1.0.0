@@ -28,9 +28,22 @@ namespace LogicielNettoyage
         public DirectoryInfo winTemp; //Le dossier temp de Windows
         public DirectoryInfo appTemp; //Le dossier temp des application
         int nbFileDeletes = 0;
+        long totalSize;
+
         public MainWindow()
         {
             InitializeComponent();
+            if (File.Exists("date.txt"))
+            {
+                string dateFromFile = GetSomethingFromFile("date.txt");
+                if (dateFromFile != string.Empty)
+                    date.Content = dateFromFile;
+                else
+                    date.Content = "Jamais";
+            }else
+                date.Content = "Jamais";
+
+
             winTemp = new DirectoryInfo(@"C:\Windows\Temp"); //Le chemin du dossier temp
             appTemp = new DirectoryInfo(System.IO.Path.GetTempPath()); //Le chemin du temp des Apps en fonction de l'utilisateur 
             CheckActu(); 
@@ -93,6 +106,8 @@ namespace LogicielNettoyage
         // Cette procedure prend un dossier et se charge de le vider
         public void ClearTempData(DirectoryInfo di)
         {
+            btnClean.Content = "Nettoyage...";
+            MessageBox.Show("Patientez s'il vous plait!");
             foreach (FileInfo file in di.GetFiles())
             {
                 try
@@ -161,12 +176,13 @@ namespace LogicielNettoyage
         public void AnalyseFolders()
         {
             Console.WriteLine("Début de l'analyse...");
-            long totalSize = 0;
+            totalSize = 0;
 
             try
             {
                 totalSize += DirSize(winTemp) / 1000000;
                 totalSize += DirSize(appTemp) / 1000000;
+
             }
             catch (Exception ex)
             {
@@ -217,7 +233,12 @@ namespace LogicielNettoyage
             SaveSomething(nb, "historique.txt");
             btnClean.Content = "NETTOYAGE TERMINÉ";
             titre.Content = "Nettoyage effectué !";
-            espace.Content = "0 Mb";
+            espace.Content = totalSize + " Mb";
+
+            if(totalSize != 0)
+            {
+                MessageBox.Show("🚫 Attention : Certains fichiers ne peuvent pas être supprimés pour des raisons de sécurité. 🙏");
+            }
         }
 
         /// <summary>
@@ -228,7 +249,7 @@ namespace LogicielNettoyage
         public void SaveSomething(string text, string filepath)
         {
             
-            File.WriteAllText("/Visual-Studio-Project/Logiciel-de-Nettoyage-PC/LogicielNettoyage/data/"+filepath, text);
+            File.WriteAllText(filepath, text);
         }
 
         /// <summary>
@@ -238,7 +259,7 @@ namespace LogicielNettoyage
         /// <returns>return le text ecrit dans le fichier</returns>
         public string GetSomethingFromFile(string filepath)
         {
-            string text = File.ReadAllText("/Visual-Studio-Project/Logiciel-de-Nettoyage-PC/LogicielNettoyage/data/" +filepath);
+            string text = File.ReadAllText(filepath);
             return text;
         }
 
@@ -250,8 +271,13 @@ namespace LogicielNettoyage
         /// <param name="e"></param>
         private void btnHistorique_Click(object sender, RoutedEventArgs e)
         {
-            string nbFileDeleted = GetSomethingFromFile("historique.txt");
-            MessageBox.Show(nbFileDeleted + " FICHIERS ont été nettoyer sur votre machine", "HISTORIQUE", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (File.Exists("historique.txt"))
+            {
+                string nbFileDeleted = GetSomethingFromFile("historique.txt");
+                MessageBox.Show(nbFileDeleted + " FICHIERS ont été nettoyer sur votre machine", "HISTORIQUE", MessageBoxButton.OK, MessageBoxImage.Information);
+            }else
+                MessageBox.Show("Aucun nettoyage effectuer sur votre machine!", "HISTORIQUE", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
     }
 }

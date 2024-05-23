@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutoPcCleaner.MainPage"
+             BackgroundColor="white">
+
+    <VerticalStackLayout Padding="0">
+        
+        <!-- Menu du haut avec specs PC -->
+        <Frame BackgroundColor="#444" HeightRequest="100" BorderColor="#444" CornerRadius="0">
+            <FlexLayout Direction="Row" Padding="0">
+                <!-- logo -->
+                <Image Source="pcclogo.png" WidthRequest="60" Margin="0,0,5,0"/>
+                <!-- Nom + version -->
+                <VerticalStackLayout Margin="0">
+                    <Label Text="PC Cleaner" FontAttributes="Bold" FontSize="Title"/>
+                    <Label Text="v1.4.0"/>
+                </VerticalStackLayout>
+                <Label Text="" WidthRequest="80" />
+                <!-- Specs -->
+                <VerticalStackLayout FlexLayout.Grow="1">
+                    <Label Text="Microsoft Windows X" x:Name="osVersion"/>
+                    <Label Text="xxxxxx" x:Name="hardware"/>
+                </VerticalStackLayout>
+                <!-- Info -->
+                <ImageButton Source="info.png" WidthRequest="50" BackgroundColor="#444" Clicked="InfoButton_Clicked"/>
+            </FlexLayout>
+        </Frame>
+
+        <AbsoluteLayout>
+            <!-- Side menu de gauche -->
+            <Frame AbsoluteLayout.LayoutBounds="0,0,0.075,1" AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="#666" MinimumWidthRequest="80" Padding="0" BorderColor="#666" CornerRadius="0">
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <BoxView HeightRequest="1" BackgroundColor="Transparent"/>
+                    <!-- Page nettoyage -->
+                    <ImageButton Source="clean.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_clean_Clicked">
+                    </ImageButton>
+                    <Label Text="Nettoyage" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center" FontAttributes="Bold" TextDecorations="Underline"/>
+                    <!-- Page RAM -->
+                    <ImageButton Source="ram.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_ram_Clicked" />
+                    <Label Text="RAM" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                    <!-- Page Outils -->
+                    <ImageButton Source="tools.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_tools_Clicked" />
+                    <Label Text="Outils" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                    <!-- Page Options -->
+                    <ImageButton Source="options.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_Options_Clicked" />
+                    <Label Text="Options" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                    <!-- Page MAJ -->
+                    <ImageButton Source="update.png" WidthRequest="50" BackgroundColor="#666" Clicked="ImageButton_maj_Clicked" />
+                    <Label Text="MAJ" FontSize="12" Margin="0, -15, 0, 10" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Partie centrale principale -->
+            <VerticalStackLayout AbsoluteLayout.LayoutBounds="1,0,0.925,1" AbsoluteLayout.LayoutFlags="All">
+                <Frame BackgroundColor="White" BorderColor="#fff" CornerRadius="0" Padding="0" Margin="0" MinimumHeightRequest="585">
+                    <!-- Grille -->
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <!-- Scroll view des options de nettoyage -->
+                        <ScrollView Background="#ededed" HeightRequest="585" WidthRequest="220">
+                            <StackLayout>
+                                <Label Text=" Fichiers à nettoyer :" FontAttributes="Bold" TextColor="Black" Margin="1, 10, 0, 10"/>
+                                <!-- Checkbox fichiers temporaires -->
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" x:Name="chkbFichiersTemp" CheckedChanged="chkbFichiersTemp_CheckedChanged" />
+                                    <Label Text="Fichiers temporaires" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                                <!-- Checkbox vider corbeille -->
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" x:Name="chkbCorbeille" CheckedChanged="chkbCorbeille_CheckedChanged"/>
+                                    <Label Text="Vider la corbeille" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                                <!-- Logs -->
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" x:Name="chkbLogs" CheckedChanged="chkbLogs_CheckedChanged"/>
+                                    <Label Text="Logs Windows" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                                <!-- Windows Update -->
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" x:Name="chkbWinUpdate" CheckedChanged="chkbWinUpdate_CheckedChanged"/>
+                                    <Label Text="Fichiers Win Update" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                                <!-- Rapports d'erreur -->
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="True" x:Name="chkbErrors" CheckedChanged="chkbErrors_CheckedChanged"/>
+                                    <Label Text="Rapport d'erreurs" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </ScrollView>
+                        
+                        <!-- Rapport de nettoyage (partie de droite) -->
+                        <Frame MinimumWidthRequest="600" Grid.Column="1" CornerRadius="0" BorderColor="White" HeightRequest="580" BackgroundColor="White">
+                            <ScrollView>
+                                <StackLayout>
+                                    <Label Text="Nettoyage du disque dur" FontSize="Large" FontAttributes="Bold" x:Name="mainTitle" TextColor="Black" Margin="0,0,0,10"/>
+
+                                    <ProgressBar Progress="0" HeightRequest="10" ScaleY="4" ProgressColor="LawnGreen" BackgroundColor="White" x:Name="progression"/>
+
+                                    <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0, 20, 0, 5"/>
+
+                                    <Label Text="" FontAttributes="Bold" TextColor="Black" x:Name="totalSize"/>
+
+                                    <!-- Tableau récap -->
+                                    <TableView Intent="Settings" RowHeight="45" IsVisible="False" x:Name="tableRecap">
+                                        <TableRoot>
+                                            <TableSection Title="--- Rapport détaillé des fichiers supprimés ---" TextColor="Black">
+                                                <ImageCell Text="Fichiers temporaires" x:Name="detailFichiersTemp"
+                Detail="Ignoré." DetailColor="#222" TextColor="Black" />
+                                                <ImageCell Text="Fichiers Windows Update" x:Name="detailWinUpdate"
+                Detail="Ignoré." DetailColor="#222" TextColor="Black" />
+                                                <ImageCell Text="Rapport d'erreurs" x:Name="detailErrors"
+                Detail="Ignoré." DetailColor="#222" TextColor="Black"/>
+                                                <ImageCell Text="Logs Windows" x:Name="detailLogs"
+                Detail="Ignoré." DetailColor="#222" TextColor="Black" />
+                                                <ImageCell Text="Corbeille vidée" x:Name="detailCorbeille"
+                Detail="Ignoré." DetailColor="#222" TextColor="Black" />
+                                            </TableSection>
+                                        </TableRoot>
+                                    </TableView>
+                                    
+                                    <!-- Bouton de nettoyage -->
+                                    <Button Text="Nettoyer" Background="DodgerBlue" TextColor="White" Clicked="ButtonClean_Clicked" />
+                                    <Label x:Name="infos" Text="Supprimez les fichiers inutiles de votre disque en cliquant sur le bouton nettoyer. Sélectionnez les options souhaitées sur le menu de gauche." Margin="0,10,0,0" TextColor="Black"/>
+
+                                </StackLayout>
+                            </ScrollView>
+                        </Frame>
+                        
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+
+            <!-- Footer -->
+            <Frame  AbsoluteLayout.LayoutBounds="0,585,1,AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional"
+            BackgroundColor="#333" HeightRequest="60" BorderColor="#333" CornerRadius="0">
+                <Label Text="BAH Mamadou" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextDecorations="Underline"/>
+            </Frame>
+
+        </AbsoluteLayout>
+        
+    </VerticalStackLayout>
+
+</ContentPage>

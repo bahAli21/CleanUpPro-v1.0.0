@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LogicielNettoyage"
         mc:Ignorable="d"
         x:Name="fenetre"
-        Title="Logiciel nettoyage" Height="650" Width="1000" ResizeMode="NoResize" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" WindowStartupLocation="CenterScreen" Icon="data/ico.ico">
+        Title="CleanUp Pro" Height="650" Width="1000" ResizeMode="NoResize" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" WindowStartupLocation="CenterScreen" Icon="data/ico.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="395*"/>

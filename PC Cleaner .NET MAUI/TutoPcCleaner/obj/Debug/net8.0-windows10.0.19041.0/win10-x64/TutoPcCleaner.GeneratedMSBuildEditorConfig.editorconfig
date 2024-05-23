@@ -1,0 +1,67 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TutoPcCleaner
+build_property.ProjectDir = D:\Visual-Studio-Project\sources-pc-cleaner\TutoPcCleaner\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/OptionsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.OptionsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OptionsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OptionsPage.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/RamPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.RamPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RamPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RamPage.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/ToolsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.ToolsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ToolsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ToolsPage.xaml
+
+[D:/Visual-Studio-Project/sources-pc-cleaner/TutoPcCleaner/UpdatePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TutoPcCleaner.UpdatePage.xaml
+build_metadata.AdditionalFiles.TargetPath = UpdatePage.xaml
+build_metadata.AdditionalFiles.RelativePath = UpdatePage.xaml

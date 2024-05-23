@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|D:\\Visual-Studio-Project\\sources-pc-cleaner\\tutopccleaner\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\optionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\optionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\toolspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\toolspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\rampage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\rampage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\optionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\optionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\toolspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\toolspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|d:\\visual-studio-project\\sources-pc-cleaner\\tutopccleaner\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|D:\\Visual-Studio-Project\\sources-pc-cleaner\\tutopccleaner\\helpers\\sysinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\helpers\\sysinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|D:\\Visual-Studio-Project\\sources-pc-cleaner\\tutopccleaner\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD92268-CBF8-4B04-AD24-51915509C7AF}|TutoPcCleaner\\TutoPcCleaner.csproj|solutionrelative:tutopccleaner\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RamPage.xaml",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\RamPage.xaml",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\RamPage.xaml",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\RamPage.xaml",
+              "RelativeToolTip": "TutoPcCleaner\\RamPage.xaml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T20:49:14.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToolsPage.xaml",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\ToolsPage.xaml",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\ToolsPage.xaml",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\ToolsPage.xaml",
+              "RelativeToolTip": "TutoPcCleaner\\ToolsPage.xaml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T20:48:52.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OptionsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\OptionsPage.xaml.cs",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\OptionsPage.xaml.cs",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\OptionsPage.xaml.cs",
+              "RelativeToolTip": "TutoPcCleaner\\OptionsPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:48:27.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OptionsPage.xaml",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\OptionsPage.xaml",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\OptionsPage.xaml",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\OptionsPage.xaml",
+              "RelativeToolTip": "TutoPcCleaner\\OptionsPage.xaml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAF0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T20:48:19.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MainPage.xaml",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\MainPage.xaml",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MainPage.xaml",
+              "RelativeToolTip": "TutoPcCleaner\\MainPage.xaml",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAI4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T20:32:19.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToolsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\ToolsPage.xaml.cs",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\ToolsPage.xaml.cs",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\ToolsPage.xaml.cs",
+              "RelativeToolTip": "TutoPcCleaner\\ToolsPage.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:47:58.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sysinfos.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\Helpers\\Sysinfos.cs",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\Helpers\\Sysinfos.cs",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\Helpers\\Sysinfos.cs",
+              "RelativeToolTip": "TutoPcCleaner\\Helpers\\Sysinfos.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:34:35.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MainPage.xaml.cs",
+              "RelativeToolTip": "TutoPcCleaner\\MainPage.xaml.cs",
+              "ViewState": "AQIAAHkBAAAAAAAAAIAwwH8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:32:33.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "TutoPcCleaner\\MauiProgram.cs",
+              "ToolTip": "D:\\Visual-Studio-Project\\sources-pc-cleaner\\TutoPcCleaner\\MauiProgram.cs",
+              "RelativeToolTip": "TutoPcCleaner\\MauiProgram.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:32:12.734Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

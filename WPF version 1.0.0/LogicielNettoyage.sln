@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicielNettoyage", "LogicielNettoyage\LogicielNettoyage.csproj", "{03CA675E-29DE-4E77-8D21-1DBFF356C988}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{1ADA3E3B-EF88-41D5-ABA5-2C1E1856C0D4}"
+	ProjectSection(SolutionItems) = preProject
+		..\CleanUpPro\ico-list.png = ..\CleanUpPro\ico-list.png
+		..\CleanUpPro\ico.ico = ..\CleanUpPro\ico.ico
+		..\CleanUpPro\icons8-balayer-100.png = ..\CleanUpPro\icons8-balayer-100.png
+		..\CleanUpPro\icons8-domaine-64.png = ..\CleanUpPro\icons8-domaine-64.png
+		..\CleanUpPro\icons8-mettre-à-jour-la-rotation-à-gauche-100.png = ..\CleanUpPro\icons8-mettre-à-jour-la-rotation-à-gauche-100.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03CA675E-29DE-4E77-8D21-1DBFF356C988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CA675E-29DE-4E77-8D21-1DBFF356C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CA675E-29DE-4E77-8D21-1DBFF356C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CA675E-29DE-4E77-8D21-1DBFF356C988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C7EE27B-A64B-4B96-9F5E-5E385B791195}
+	EndGlobalSection
+EndGlobal
